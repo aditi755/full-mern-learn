@@ -8,7 +8,7 @@ const cors = require("cors")
 app.use(express.json());
 app.use(cors(
     {
-    origin: ["https://full-mern-learn.vercel.app/"],
+    origin: ["https://full-mern-learn.vercel.app"],
     methods: ["POST", "GET", "DELETE", "PUT"],
     credentials: true
     }
