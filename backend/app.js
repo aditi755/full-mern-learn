@@ -6,7 +6,13 @@ const cors = require("cors")
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+    origin: ["https://full-mern-learn.vercel.app/"],
+    methods: ["POST", "GET", "DELETE", "PUT"],
+    credentials: true
+    }
+));
 app.use('/books', router) //localhost:5000/books
 
 
