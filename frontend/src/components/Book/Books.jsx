@@ -41,7 +41,7 @@ import Book from './Book';
 import axios from 'axios';
 import './Book.css'
 
-const URL = "http://localhost:5000/books";
+const URL = "https://full-mern-learn-server.vercel.app/books";
 
 const Books = () => {
   const [books, setBooks] = useState([]);
