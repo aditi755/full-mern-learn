@@ -15,7 +15,7 @@ const getAllBooks = async(req,res,next) => {
 }
 
 const addBook = async (req,res,next) => {
-    const { name, author, description, price, available } = req.body
+    const { name, author, description, price, available, image } = req.body
     let book;
     try{
         book = new Book({
@@ -23,7 +23,8 @@ const addBook = async (req,res,next) => {
         author,
         description,
         price,
-        available
+        available,
+        image
         });
         await book.save()
     }
